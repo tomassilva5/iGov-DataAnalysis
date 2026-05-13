@@ -11,6 +11,8 @@ End-to-end data analysis and machine learning project applied to the **iGov data
 
 The goal is to **understand what drives citizen satisfaction** with digital government services and build predictive models to support operational decision-making.
 
+**[Access the Interactive iGov Dashboard Here](https://tomassilva5.github.io/iGov-DataAnalysis/)**
+
 ---
 
 ## What's Inside
@@ -25,31 +27,34 @@ The goal is to **understand what drives citizen satisfaction** with digital gove
 | **Scatterplot Matrix** | Pairwise relationships across all variables |
 | **Shape Analysis** | Skewness & Kurtosis interpretation |
 | **Automated EDA** | Full report via ydata-profiling |
-| **MLflow Modeling** | Linear Regression, Random Forest, Decision Tree |
-| **Decision Support System** | Predict citizen satisfaction from operational inputs |
+| **MLflow Modeling** | Linear Regression, Logistic Regression, Random Forest, Decision Tree, Neural Network |
+| **Decision Support System (DSS)** | Interactive tool to predict citizen satisfaction from operational inputs |
 
 ---
 
 ## Technology Stack
 
-- **Python** — Pandas, NumPy, Matplotlib, Seaborn, Plotly
-- **Machine Learning** — Scikit-Learn, MLflow
-- **Statistics** — SciPy
-- **EDA** — ydata-profiling
+- **Machine Learning & Data:** Python, Pandas, NumPy, Scikit-Learn, MLflow, SciPy
+- **Data Visualization:** Matplotlib, Seaborn, Plotly, ydata-profiling
+- **Dashboard Front-end:** HTML5, CSS3, JavaScript, Chart.js
 
 ---
 
-## How to Run
+## How to View the Project
 
-### Kaggle
-Open directly on Kaggle: [iGov — EDA & Predictive Modeling](https://www.kaggle.com/code/tomassilva5/igov-eda-predictive-modeling)
+### 1. Interactive Dashboard
+You can simulate operational scenarios and view the final results without running any code:
+👉 [View Live Dashboard](https://tomassilva5.github.io/iGov-DataAnalysis/)
 
+### 2. Kaggle Notebook (Code & Analysis)
+To view the complete code, exploratory data analysis, and model training:
+👉 [Open on Kaggle: iGov — EDA & Predictive Modeling](https://www.kaggle.com/code/tomassilva5/igov-eda-predictive-modeling)
 
 ---
 
 ## Key Findings
 
-- **Resolution rate** is the strongest predictor of citizen satisfaction
-- **Technical errors** have a significant negative impact on satisfaction
-- **K-Means clustering** reveals 3 distinct service performance segments
-- **Random Forest** achieved the best predictive accuracy among tested models
+- **Resolution rate** is the strongest predictor of citizen satisfaction.
+- **Technical errors** have a significant negative impact on satisfaction.
+- **K-Means clustering** reveals 3 distinct service performance segments.
+- **Linear Regression** achieved the best predictive accuracy (R² = 0.878) among the tested models, proving that the relationships between operational features and satisfaction are largely linear.
