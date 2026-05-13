@@ -900,11 +900,6 @@
             <span id="errosVal" style="font-size:12px;color:var(--primary-light)">2</span>
           </div>
           <div class="form-group">
-            <label class="form-label">Interaction Volume</label>
-            <input type="range" class="form-input" id="volume" min="14" max="500" value="150" oninput="updateSSD()">
-            <span id="volumeVal" style="font-size:12px;color:var(--primary-light)">150</span>
-          </div>
-          <div class="form-group">
             <label class="form-label">Abandonment Rate (%)</label>
             <input type="range" class="form-input" id="abandono" min="0" max="40" value="5" oninput="updateSSD()">
             <span id="abandonoVal" style="font-size:12px;color:var(--primary-light)">5%</span>
@@ -915,10 +910,6 @@
           <div class="result-score" id="ssdScore">4.41</div>
           <div class="result-label">out of 5.00 points</div>
           <div class="result-level level-high" id="ssdLevel">HIGH</div>
-          <div style="margin-top:24px;font-size:12px;color:var(--text-muted);line-height:1.8;">
-            Model: Linear Regression<br>
-            Formula: 0.04×Resolution − 0.02×Time − 0.15×Errors − 0.003×Abandonment
-          </div>
         </div>
       </div>
     </div>
@@ -1153,13 +1144,11 @@ function updateSSD() {
   const t = +document.getElementById('tempo').value;
   const r = +document.getElementById('resolucao').value;
   const e = +document.getElementById('erros').value;
-  const v = +document.getElementById('volume').value;
   const a = +document.getElementById('abandono').value;
 
   document.getElementById('tempoVal').textContent = t + ' min';
   document.getElementById('resolucaoVal').textContent = r + '%';
   document.getElementById('errosVal').textContent = e;
-  document.getElementById('volumeVal').textContent = v;
   document.getElementById('abandonoVal').textContent = a + '%';
 
   // Linear regression formula
